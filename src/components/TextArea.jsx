@@ -1,10 +1,10 @@
 import React from 'react';
 
-const TextArea = ({ name, id, value, onChange: handleChange }) => {
+const TextArea = ({ name, id, value, onChange: handleChange, className }) => {
   return (
-    <div>
+    <div className={className}>
       <label htmlFor={id}>{name}</label>
-      <textarea onChange={handleChange} value={value} type="text" rows="20" cols="100" id={id} name={name} />
+      <textarea onChange={handleChange} value={value} type="text" id={id} name={name} />
     </div>
   );
 }
