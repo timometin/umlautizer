@@ -7,6 +7,7 @@ function App() {
   const [ inputArea, setInputArea ] = useState("");
   const [ outputArea, setOutputArea ] = useState("");
   const [ legendCollapsed, setlegendCollapsed ] = useState(true);
+  
   const copyToClipboard = ({ currentTarget }) => {
     const value = document.getElementById("outputfield");
     value.select();
@@ -16,13 +17,19 @@ function App() {
   const toggleLegendCollapsed = () => {
     setlegendCollapsed(legendCollapsed === true ? false : true);
   }
+  const handleEnter = (e) => {
+    if (e.keyCode === 13 && !e.shiftKey) { 
+      e.preventDefault(); 
+      setOutputArea(umlautize(inputArea));
+    }
+  }
   return (
     <div className="App">
       <Legend onClick={toggleLegendCollapsed} legendClass={legendCollapsed === true ? "legend" : "legend expanded"} tableClass={legendCollapsed === true ? "legend-table collapsed" : "legend-table"} />
       <div className={legendCollapsed === true ? "main" : "main expanded"}>
         <form onSubmit={(e) => { e.preventDefault(); setOutputArea(umlautize(inputArea)); }}>
           <div className="row">
-            <TextArea className="textfield" id="inputfield" name="Input" value={inputArea} onChange={(e) => setInputArea(e.currentTarget.value)} />
+            <TextArea onKeyDown={handleEnter} className="textfield" id="inputfield" name="Input" value={inputArea} onChange={(e) => setInputArea(e.currentTarget.value)} />
             <TextArea className="textfield" id="outputfield" name="Output" value={outputArea} onChange={(e) => setOutputArea(e.currentTarget.value)} />
           </div>
           <div className="row">
