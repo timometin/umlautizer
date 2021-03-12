@@ -129,9 +129,11 @@ Legend
   width: 100%;
   text-align: center;
   background: var(--background-light);
-  /* border-radius: 15px; */
+  border-radius: 15px;
 }
 .legend td {
   border-top: thin solid var(--background-lighter);
-  /* border-bottom: thin solid var(--background-lighter); */
+}
+.first-row {
+  border: none !important;
 }
