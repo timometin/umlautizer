@@ -4,15 +4,20 @@
   --background: #2F3136;
   --background-light: #36393F;
   --background-lighter: #42454D;
-  --btn-primary: rgb(46, 184, 46);
-  --btn-secondary: rgb(10, 10, 177);
+  --btn-primary: #2eb82e;
+  --btn-secondary: #0a0ab1;
 }
-
 html {
   background-color: var(--background);
   font-family: "Roboto", sans-serif;
   color: white;
 }
+
+/* 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Form
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
 form label {
   display: block;
   padding: 0px 25px 0px 25px;
@@ -27,7 +32,7 @@ form textarea {
   border: none;
   color: white;
   width: 100%;
-  height: 35vh;
+  height: 30vh;
   font-size: 20px;
   background-color: var(--background-light);
   transition: background-color 500ms;
@@ -36,6 +41,15 @@ form textarea:focus {
   outline-style: none;
   background-color: var(--background-lighter);
 }
+.textfield {
+  margin: 0px 0px 20px 0px;
+}
+
+/* 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+General Button styling
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
 button.btn {
   border-radius: 4px;
   border: none;
@@ -55,55 +69,69 @@ button.btn.btn-secondary {
 button.btn:disabled {
   opacity: 25%;
 }
+#submitBtn {
+  margin: 0px 25px 0px 25px;
+}
+/* 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Main section of the website
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
 .main {
+  display: flex;
+  justify-content: space-between;
   margin: 0rem 5rem 0rem 5rem;
-  transition: margin 100ms;
 }
-.main.expanded {
-  margin: 0rem 5rem 0rem 15rem;
+.main-item {
+  width: 100%;
+  margin: 0rem 1rem;
 }
-.textfield {
-  margin: 20px 0px 20px 0px;
+.main-item.small {
+  flex: 1;
 }
-.legend {
-  padding-left: 10px;
-  width: 5rem;
-  height: 100vh;
-  position: fixed;
-  transition: width 100ms ease;
-  text-overflow: clip;
-}
-.legend.expanded {
-  width: 15rem;
-}
-.legend-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-.legend-item {
-  display: flex;
-  align-items: center;
-  height: 5rem;
-}
-.legend-table {
-  min-width: 150px;
-  text-align: right;
-}
-.legend-table.collapsed {
-  display: none;
+.main-item.big {
+  flex: 3;
 }
 
-#legendIconBtn {
+/* 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Navbar
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+.nav-bar {
+  max-width: 100vw;
+  display: flex;
+  align-items: center;
+}
+.nav-item {
+  margin: 0px 20px;
+}
+#legendIcon {
   background: inherit;
   color: inherit;
   border: inherit;
-  margin-bottom: 3rem;
-}
-#legendIcon {
-  font-size: 3rem;
   cursor: pointer;
 }
-#submitBtn {
-  margin: 0px 25px 0px 25px;
+#legendIcon:focus {
+  outline: none;
+}
+#legendIcon span {
+  font-size: 38px;
+  transition: color 200ms ease;
+}
+
+/* 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Legend
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+.legend table {
+  width: 100%;
+  text-align: center;
+  background: var(--background-light);
+  /* border-radius: 15px; */
+}
+.legend td {
+  border-top: thin solid var(--background-lighter);
+  /* border-bottom: thin solid var(--background-lighter); */
 }
