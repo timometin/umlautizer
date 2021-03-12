@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import TextArea from './components/TextArea';
 import umlautize from "./common/umlautize";
 import Legend from './components/Legend';
@@ -8,7 +8,12 @@ function App() {
   const [ inputArea, setInputArea ] = useState("");
   const [ outputArea, setOutputArea ] = useState("");
   const [ legendCollapsed, setlegendCollapsed ] = useState(true);
-
+  useEffect(() => {
+    const legendSetting = window.localStorage.getItem("legendCollapsed");
+    if (legendSetting) {
+      setlegendCollapsed(JSON.parse(legendSetting));
+    }
+  }, []);
   const copyToClipboard = ({ currentTarget }) => {
     const value = document.getElementById("outputfield");
     value.select();
@@ -16,7 +21,9 @@ function App() {
     document.execCommand("copy");
   }
   const toggleLegend = () => {
-    setlegendCollapsed(legendCollapsed === true ? false : true);
+    const setting = legendCollapsed === true ? false : true;
+    setlegendCollapsed(setting);
+    window.localStorage.setItem("legendCollapsed", setting);
   }
   const handleEnter = (e) => {
     if (e.keyCode === 13 && !e.shiftKey) { 

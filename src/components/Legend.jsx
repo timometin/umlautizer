@@ -13,8 +13,8 @@ const Legend = () => {
         <caption>Placeholders</caption>
         <tbody>
           <tr>
-            <td>Ae, ae</td>
-            <td>{"\u00c4, \u00e4"}</td>
+            <td className="first-row">Ae, ae</td>
+            <td className="first-row">{"\u00c4, \u00e4"}</td>
           </tr>
           <tr>
             <td>Oe, oe</td>
