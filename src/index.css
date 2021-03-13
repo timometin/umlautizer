@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+::-moz-selection {
+  color: white;
+  background: var(--btn-secondary);
+}
+
+::selection {
+  color: white;
+  background: var(--btn-secondary);
+}
+
 :root {
   --background: #2F3136;
   --background-light: #36393F;
