@@ -15,6 +15,11 @@ function App() {
     if (legendSetting) {
       setlegendCollapsed(JSON.parse(legendSetting));
     }
+    const returningVisitor = window.localStorage.getItem("returningVisitor");
+    if (!returningVisitor) {
+      toast.dark(<p>Welcome!👋<br/>Click the questionmark icon in the top left corner to learn how to use Umlautizer!</p>, { draggable: false, autoClose: 20000, pauseOnFocusLoss: true, position: "top-center" })
+      window.localStorage.setItem("returningVisitor", true)
+    }
   }, []);
 
   const copyToClipboard = () => {
@@ -22,7 +27,7 @@ function App() {
     value.select();
     value.setSelectionRange(0, 99999);
     document.execCommand("copy");
-    toast.info("👌 copied to clipboard!", { draggable: false, pauseOnHover: false, autoClose: 3000 })
+    toast.info("👌 copied to clipboard!", { draggable: false, pauseOnHover: false, autoClose: 3000,  pauseOnFocusLoss: false, closeButton: false })
   }
   const toggleLegend = () => {
     const setting = legendCollapsed === true ? false : true;
@@ -44,7 +49,7 @@ function App() {
   }
   return (
     <div className="App">
-      <ToastContainer pauseOnFocusLoss={false} closeButton={false} />
+      <ToastContainer />
       <HeaderBar btnActive={legendCollapsed} onClick={toggleLegend} />
       <div className="main">
         <div hidden={legendCollapsed} className="main-item small">
