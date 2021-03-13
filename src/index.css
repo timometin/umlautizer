@@ -85,7 +85,7 @@ Main section of the website
   display: flex;
   justify-content: space-between;
   margin: 0rem 5rem 0rem 5rem;
-  align-items: center;
+  align-items: flex-start;
 }
 .main-item {
   margin: 1rem 1rem;
