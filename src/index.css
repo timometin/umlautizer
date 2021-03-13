@@ -129,6 +129,9 @@ Navbar
 Legend
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 */
+.legend p {
+  font-size: 16px;
+}
 .legend p:first-child {
   margin-block-start: 0;
 }
@@ -198,6 +201,15 @@ Responsive breakpoints
 }
 @media (max-width: 500px) {
   form label {
+    font-size: 18px;
+  }
+  .legend p {
+    font-size: 14px;
+  }
+  .nav-item {
+    margin: 0px 10px;
+  }
+  .textAreaContainer textarea {
     font-size: 18px;
   }
 }
