@@ -5,7 +5,7 @@
 const Legend = () => {
   return (
     <div className="legend">
-      <p>You can use Umlautizer to add german Umlaute to your Text without the need for a german keyboard. Simply use the placeholders from the table below.</p>
+      <p>You can use Umlautizer to add german Umlaute and Eszetts to your Text without the need for a german keyboard. Simply use the placeholders from the table below.</p>
       <p>Pressing <b>ENTER</b> within the upper text field or pressing the <b>Umlautize!</b> button will generate your Text with the proper Umlaute in the lower text field.</p>
       <p>To add a new line use <b>SHIFT+ENTER.</b></p>
       <p>Instead of clicking on the <b>copy to clipboard</b> button, you can press <b>CTRL+SHIFT+C</b> inside the lower text field to immediately copy the entire content text to your clipboard.</p>
