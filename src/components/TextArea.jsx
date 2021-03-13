@@ -4,7 +4,9 @@ const TextArea = ({ name, id, value, onChange: handleChange, className, onKeyDow
   return (
     <div className={className}>
       <label htmlFor={id}>{name}</label>
-      <textarea onKeyDown={handleKeyDown} onChange={handleChange} value={value} type="text" id={id} name={name} />
+      <div className="textAreaContainer">
+        <textarea onKeyDown={handleKeyDown} onChange={handleChange} value={value} type="text" id={id} name={name} />
+      </div>
     </div>
   );
 }

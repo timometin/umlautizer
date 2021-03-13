@@ -2,9 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import './index.css';
 import "normalize.css";
 import "../node_modules/@fortawesome/fontawesome-free/css/all.css";
+import "react-toastify/dist/ReactToastify.css";
+import './index.css';
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
