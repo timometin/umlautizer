@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
-import TextArea from './components/TextArea';
-import umlautize from "./common/umlautize";
-import Legend from './components/Legend';
-import HeaderBar from "./components/HeaderBar";
 import { ToastContainer, toast } from "react-toastify";
+import umlautize from "./common/umlautize";
+import HeaderBar from "./components/HeaderBar";
+import Legend from './components/Legend';
+import TextArea from './components/TextArea';
 
 function App() {
   const [ inputArea, setInputArea ] = useState("");
