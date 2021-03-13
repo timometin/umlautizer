@@ -108,7 +108,7 @@ Navbar
   align-items: center;
 }
 .nav-item {
-  margin: 0px 20px;
+  margin: 0px 23px;
 }
 #legendIcon {
   background: inherit;
@@ -129,6 +129,9 @@ Navbar
 Legend
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 */
+.legend p:first-child {
+  margin-block-start: 0;
+}
 .legend table {
   width: 100%;
   text-align: center;
