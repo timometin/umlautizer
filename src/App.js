@@ -14,7 +14,7 @@ function App() {
       setlegendCollapsed(JSON.parse(legendSetting));
     }
   }, []);
-  const copyToClipboard = ({ currentTarget }) => {
+  const copyToClipboard = () => {
     const value = document.getElementById("outputfield");
     value.select();
     value.setSelectionRange(0, 99999);
@@ -29,6 +29,13 @@ function App() {
     if (e.keyCode === 13 && !e.shiftKey) { 
       e.preventDefault(); 
       setOutputArea(umlautize(inputArea));
+      document.getElementById("outputfield").focus();
+    }
+  }
+  const handleCopy = (e) => {
+    if (e.keyCode === 67 && e.shiftKey && e.ctrlKey) { 
+      e.preventDefault(); 
+      copyToClipboard();
     }
   }
   return (
@@ -41,7 +48,7 @@ function App() {
         <div className="main-item big">
           <form onSubmit={(e) => { e.preventDefault(); setOutputArea(umlautize(inputArea)); }}>
             <TextArea onKeyDown={handleEnter} className="textfield" id="inputfield" name="Input" value={inputArea} onChange={(e) => setInputArea(e.currentTarget.value)} />
-            <TextArea className="textfield" id="outputfield" name="Output" value={outputArea} onChange={(e) => setOutputArea(e.currentTarget.value)} />
+            <TextArea onKeyDown={handleCopy} className="textfield" id="outputfield" name="Output" value={outputArea} onChange={(e) => setOutputArea(e.currentTarget.value)} />
             <button id="submitBtn" className="btn btn-primary" disabled={inputArea === "" && true} type="submit" >Umlautize!</button>
             <button className="btn btn-secondary" disabled={outputArea === "" && true} type="button" onClick={copyToClipboard}>copy to clipboard</button>
           </form>
