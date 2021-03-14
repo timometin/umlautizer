@@ -4,6 +4,11 @@ import umlautize from "./common/umlautize";
 import HeaderBar from "./components/HeaderBar";
 import Legend from './components/Legend';
 import TextArea from './components/TextArea';
+import Footer from "./components/Footer";
+import { ReactComponent as KeyCapC } from "./svg/keycap_c.svg"
+import { ReactComponent as KeyCapCTRL } from "./svg/keycap_ctrl.svg"
+import { ReactComponent as KeyCapSHFT } from "./svg/keycap_shft.svg"
+import { ReactComponent as KeyCapEnter } from "./svg/keycap_enter.svg"
 
 function App() {
   const [ inputArea, setInputArea ] = useState("");
@@ -66,6 +71,20 @@ function App() {
           </form>
         </div>
       </div>
+      <Footer>
+        <p>Created with 💜 by <a target="_blank" rel="noreferrer" href="http://celik.io">Timo Celik</a></p>
+        <div className="shortcuts">
+          <div className="shortcuts-item">
+            <p>submit:</p><KeyCapEnter />
+          </div>
+          <div className="shortcuts-item">
+            <p>new line:</p><KeyCapSHFT /><p>+</p><KeyCapEnter />
+          </div>
+          <div className="shortcuts-item">
+            <p>copy to clipboard:</p><KeyCapCTRL /><p>+</p><KeyCapSHFT /><p>+</p><KeyCapC />
+          </div>
+        </div>
+      </Footer>
     </div>
   );
 }

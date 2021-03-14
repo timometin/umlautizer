@@ -1,0 +1,20 @@
+<svg class="keycap keycap-enter" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 100">
+  <g class="keycap-main" id="outline">
+    <rect width="220" height="100" rx="14.83"/>
+  </g>
+  <g class="keycap-accent" id="background">
+    <rect class="cls-1" x="10" y="10" width="200" height="80" rx="12.65"/>
+  </g>
+  <g class="keycap-main" id="mainBody">
+    <rect x="15" y="15" width="190" height="70" rx="12.81"/>
+  </g>
+  <g class="keycap-accent" id="label">
+    <g>
+      <path class="cls-1" d="M442.36,503.25H427v13.06h18v8.07H419V475.62h26v8.14H427v11.62h15.36Z" transform="translate(-390 -450)"/>
+      <path class="cls-1" d="M481.28,524.38h-8L457.71,492.3v32.08h-8V475.62h8l15.6,32.15V475.62h8Z" transform="translate(-390 -450)"/>
+      <path class="cls-1" d="M517.49,483.76H505.6v40.62h-8V483.76H485.87v-8.14h31.62Z" transform="translate(-390 -450)"/>
+      <path class="cls-1" d="M545.41,503.25H530.05v13.06h18v8.07h-26V475.62h26v8.14h-18v11.62h15.36Z" transform="translate(-390 -450)"/>
+      <path class="cls-1" d="M567.14,506.53h-6.38v17.85h-8V475.62h14.43q6.88,0,10.61,3.85t3.73,10.88a18,18,0,0,1-1.72,8.33A12.74,12.74,0,0,1,574.6,504l8.4,19.92v.47h-8.59Zm-6.38-8.14h6.46a5.82,5.82,0,0,0,4.66-1.92,7.92,7.92,0,0,0,1.65-5.31,8.61,8.61,0,0,0-1.55-5.43,5.75,5.75,0,0,0-4.79-2h-6.43Z" transform="translate(-390 -450)"/>
+    </g>
+  </g>
+</svg>

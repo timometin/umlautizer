@@ -14,13 +14,15 @@
   --background: #2F3136;
   --background-light: #36393F;
   --background-lighter: #42454D;
+  --text-primary: white;
+  --text-secondary: gray;
   --btn-primary: #43bb43;
   --btn-secondary: #3498db;
 }
 html {
   background-color: var(--background);
   font-family: "Roboto", sans-serif;
-  color: white;
+  color: var(--text-primary);
 }
 
 /* 
@@ -45,7 +47,7 @@ form label {
   border-radius: 25px;
   resize: none;
   border: none;
-  color: white;
+  color: var(--text-primary);
   height: 30vh;
   font-size: 20px;
   background-color: var(--background-light);
@@ -94,11 +96,11 @@ Main section of the website
 .main {
   display: flex;
   justify-content: space-between;
-  margin: 0rem 5rem 0rem 5rem;
+  margin: 1rem 5rem 1rem 5rem;
   align-items: flex-start;
 }
 .main-item {
-  margin: 1rem 1rem;
+  margin: 0rem 1rem;
 }
 .main-item.small {
   flex: 1;
@@ -169,6 +171,66 @@ Toasts
 
 /* 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Footer
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+.footer {
+  margin: 1.5rem 1rem;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-item p {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.footer-item p a {
+  color: #896ce5;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Footer shortcut descriptions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+.shortcuts {
+  display: flex;
+}
+.shortcuts-item {
+  margin-right: 1rem;
+  display: flex;
+}
+.shortcuts-item:first-child p {
+  margin: 0px 4px 0px 0px;
+}
+.shortcuts-item p {
+  color: var(--text-secondary);
+  margin: 0px 4px;
+}
+
+/* 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Keycaps
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+.keycap {
+  height: 18px;
+  width: auto;
+}
+.keycap-main {
+  fill: var(--background-lighter);
+}
+.keycap-accent {
+  fill: var(--btn-secondary);
+}
+
+/* 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Responsive breakpoints
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 */
@@ -184,13 +246,13 @@ Responsive breakpoints
     background-color: var(--background-lighter);
   }
   .legend td {
-    border-top: thin solid gray;
+    border-top: thin solid var(--text-secondary);
   }
   .main {
     display: block;
   }
 }
-@media (max-width: 735px) {
+@media (max-width: 870px) {
   .main {
     margin: 0;
   }
@@ -208,6 +270,23 @@ Responsive breakpoints
     margin: 0px 5px 0px 0px;
     flex: 1;
   }
+  .footer {
+    display: block;
+  }
+  .footer-item {
+    margin-top: 12px;
+  }
+}
+@media (max-width: 630px) {
+  .shortcuts {
+    display: block;
+  }
+  .shortcuts-item {
+    margin-top: 4px;
+  }
+  .shortcuts-item p {
+    margin: 0px 4px 0px 0px;
+  }
 }
 @media (max-width: 500px) {
   form label {
@@ -223,3 +302,4 @@ Responsive breakpoints
     font-size: 18px;
   }
 }
+
