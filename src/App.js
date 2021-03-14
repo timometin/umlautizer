@@ -72,7 +72,7 @@ function App() {
         </div>
       </div>
       <Footer>
-        <p>Created with 💜 by <a target="_blank" rel="noreferrer" href="http://celik.io">Timo Celik</a></p>
+        <p>Made with 💙 by <a target="_blank" rel="noreferrer" href="http://celik.io">Timo Celik</a></p>
         <div className="shortcuts">
           <div className="shortcuts-item">
             <p>submit:</p><KeyCapEnter />

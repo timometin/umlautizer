@@ -188,7 +188,7 @@ Footer
   margin-inline-end: 0px;
 }
 .footer-item p a {
-  color: #896ce5;
+  color: var(--btn-secondary);
   font-weight: bold;
   text-decoration: none;
 }
@@ -284,7 +284,7 @@ Responsive breakpoints
   .shortcuts-item {
     margin-top: 4px;
   }
-  .shortcuts-item p {
+  .shortcuts-item p:first-child {
     margin: 0px 4px 0px 0px;
   }
 }
