@@ -83,7 +83,7 @@ button.btn.btn-secondary {
   background-color: var(--btn-secondary);
 }
 button.btn:disabled {
-  opacity: 25%;
+  opacity: 0.25;
 }
 #submitBtn {
   margin: 0px 25px 0px 25px;
