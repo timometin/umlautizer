@@ -16,7 +16,7 @@ function App() {
     }
     const returningVisitor = window.localStorage.getItem("returningVisitor");
     if (!returningVisitor) {
-      toast.dark(<p>Welcome!👋<br/>Click the questionmark icon in the top left corner to learn how to use Umlautizer!</p>, { draggable: false, autoClose: 20000, pauseOnFocusLoss: true, position: "top-center" })
+      toast.dark(<p>Welcome!👋<br/>Click the question mark icon in the top left corner to learn how to use Umlautizer!</p>, { draggable: false, autoClose: 20000, pauseOnFocusLoss: true, position: "top-center" })
       window.localStorage.setItem("returningVisitor", true)
     }
   }, []);
