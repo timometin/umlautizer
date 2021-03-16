@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/umlautizer/static/css/main.211df997.chunk.css",
+    "main.js": "/umlautizer/static/js/main.8a0f3337.chunk.js",
+    "main.js.map": "/umlautizer/static/js/main.8a0f3337.chunk.js.map",
+    "runtime-main.js": "/umlautizer/static/js/runtime-main.019d9bad.js",
+    "runtime-main.js.map": "/umlautizer/static/js/runtime-main.019d9bad.js.map",
+    "static/css/2.91301459.chunk.css": "/umlautizer/static/css/2.91301459.chunk.css",
+    "static/js/2.c31d6a1b.chunk.js": "/umlautizer/static/js/2.c31d6a1b.chunk.js",
+    "static/js/2.c31d6a1b.chunk.js.map": "/umlautizer/static/js/2.c31d6a1b.chunk.js.map",
+    "index.html": "/umlautizer/index.html",
+    "static/css/2.91301459.chunk.css.map": "/umlautizer/static/css/2.91301459.chunk.css.map",
+    "static/css/main.211df997.chunk.css.map": "/umlautizer/static/css/main.211df997.chunk.css.map",
+    "static/js/2.c31d6a1b.chunk.js.LICENSE.txt": "/umlautizer/static/js/2.c31d6a1b.chunk.js.LICENSE.txt",
+    "static/media/all.css": "/umlautizer/static/media/fa-solid-900.f4f93856.woff",
+    "static/media/keycap_c.245a42b8.svg": "/umlautizer/static/media/keycap_c.245a42b8.svg",
+    "static/media/keycap_ctrl.f76439be.svg": "/umlautizer/static/media/keycap_ctrl.f76439be.svg",
+    "static/media/keycap_enter.52a132a2.svg": "/umlautizer/static/media/keycap_enter.52a132a2.svg",
+    "static/media/keycap_shft.266e771b.svg": "/umlautizer/static/media/keycap_shft.266e771b.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.019d9bad.js",
+    "static/css/2.91301459.chunk.css",
+    "static/js/2.c31d6a1b.chunk.js",
+    "static/css/main.211df997.chunk.css",
+    "static/js/main.8a0f3337.chunk.js"
+  ]
+}
