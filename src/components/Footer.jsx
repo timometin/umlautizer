@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-item">
-        <p>Made with 💙 by <a target="_blank" rel="noreferrer" href="https://twitter.com/CelikTimo">Timo Celik</a></p>
+        <p>made by <a target="_blank" rel="noreferrer" href="https://github.com/timometin">timo 💙</a></p>
       </div>
       <div className="footer-item">
         <div className="shortcuts">
