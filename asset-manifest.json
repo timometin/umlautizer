@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/umlautizer/static/css/main.e002459e.chunk.css",
-    "main.js": "/umlautizer/static/js/main.09d80dfb.chunk.js",
-    "main.js.map": "/umlautizer/static/js/main.09d80dfb.chunk.js.map",
+    "main.js": "/umlautizer/static/js/main.3025ee86.chunk.js",
+    "main.js.map": "/umlautizer/static/js/main.3025ee86.chunk.js.map",
     "runtime-main.js": "/umlautizer/static/js/runtime-main.019d9bad.js",
     "runtime-main.js.map": "/umlautizer/static/js/runtime-main.019d9bad.js.map",
     "static/css/2.91301459.chunk.css": "/umlautizer/static/css/2.91301459.chunk.css",
@@ -23,6 +23,6 @@
     "static/css/2.91301459.chunk.css",
     "static/js/2.c31d6a1b.chunk.js",
     "static/css/main.e002459e.chunk.css",
-    "static/js/main.09d80dfb.chunk.js"
+    "static/js/main.3025ee86.chunk.js"
   ]
 }
